@@ -1,6 +1,6 @@
 # cpxctl
 
-```cpxctl``` is a python application that lets you query CPX Server from the command line. You can use ```cpxctl``` to outputs various information about the services in CPX Server.
+```cpxctl``` is a python application that lets you query CPX Server from the command line. You can use ```cpxctl``` to output various information about the services in CPX Server.
 
 ## Setup cpxctl
 ### Create virtual environment
@@ -14,7 +14,7 @@ $ pip install -r requirements.txt
 ## Run cpxctl
 To run:
 ```
-$ ./cpxcptl.py <Argument> <options>
+$ ./cpxcptl.py <Argument> <Options>
 ```
 ### Example commands
 1. Print running services to stdout (similar to the table below) 
@@ -43,6 +43,6 @@ $ cpxctl.py get --service <SERVICE_NAME> --w 5
 ### Improvements
 - Finish challenge command 3 by adding count logic for every healthy server and exit if count > 2. 
 - Tidy challenge command 4 by using the --w flag.
-- Explore multi-threading to send a batch of REST api calls.
+- Explore multi-threading to send a batch of REST API calls.
 - When adding more functions to CLI, refine the functions to be more modular and re-usable.
 - Compile the program into a binary.
