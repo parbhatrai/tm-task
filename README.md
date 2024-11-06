@@ -1,6 +1,6 @@
 # cpxctl
 
-```cpxctl``` is a python application that lets you query CPX Server from the command line. You can use ```cpxctl``` to output various information about the services in CPX Server.
+```cpxctl``` is a CLI built using Python that lets you query CPX Server from the command line. You can use ```cpxctl``` to output various information about the services in CPX Server.
 
 ## Setup cpxctl
 ### Create virtual environment
@@ -11,7 +11,22 @@ To install required libraries, run:
 ```
 $ pip install -r requirements.txt
 ```
-## Run cpxctl
+## Run CPX server
+
+Run Python Server:
+```
+$ cpx_server.py <port_to_serve_on>
+```
+For example:
+```
+$ curl localhost:<port>/servers
+["10.58.1.121","10.58.1.120","10.58.1.123","10.58.1.122",...]
+
+$ curl localhost:<port>/10.58.1.121
+{"cpu":"61%","service":"UserService","memory":"4%"}
+```
+
+## Run cpxctl CLI
 To run:
 ```
 $ ./cpxcptl.py <Argument> <Options>
